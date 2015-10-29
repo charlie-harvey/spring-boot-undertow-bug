@@ -1,0 +1,21 @@
+
+spring:
+    application:
+        name: undertow-manager
+
+server:
+    port: 2112
+    compression:
+        enabled: true
+        min-response-size: 1
+    undertow:
+        accesslog:
+            enabled: true
+            pattern: combined
+
+logging:
+    path: logs
+
+management:
+    port: 2113
+    context-path: /actuator
